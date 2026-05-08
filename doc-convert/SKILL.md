@@ -238,6 +238,13 @@ Install required packages:
 cd /Users/sinomcu/.openclaw/workspace/skills/doc-convert
 pip3 install -r requirements.txt
 ```
+> **If the model is missing and the user tries to build/query:**
+> 1. 检查 `paraphrase-multilingual-MiniLM-L12-v2/` 是否存在
+> 2. 如果不存在，告知用户需要下载 (~400MB)
+> 3. 运行 `python3 scripts/download_model.py`
+> 4. 下载完成后继续原来的 build/query 命令
+
+这样 OpenClaw 读取 SKILL.md 时就会按照这个流程自动处理。同时也加了 `embedder.py` 里的降级逻辑——即使 SKILL.md 的指令没触发，代码层面也会自动从 HuggingFace 下载到 `~/.cache/huggingface/`。
 
 **Key dependencies:**
 - `pymupdf4llm` - PDF to Markdown conversion
