@@ -1,0 +1,11 @@
+# NET-CONVERT dependencies
+# Shares the same Python environment as doc-convert.
+# Run: pip3 install -r requirements.txt
+# Or use doc-convert's requirements (same deps):
+#   pip3 install -r ../doc-convert/requirements.txt
+
+# No additional dependencies needed - netlist parser is pure Python.
+# The following are required for kb_manager.py (same as doc-convert):
+# chromadb
+# whoosh
+# sentence-transformers

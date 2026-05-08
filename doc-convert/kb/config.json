@@ -1,0 +1,22 @@
+{
+  "name": "FAE Knowledge Base",
+  "version": "0.1.0",
+  "embedding_backend": "sentence_transformers",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dims": 384,
+  "embedding_model_path": "paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_ollama_model": "nomic-embed-text",
+  "embedding_ollama_dims": 768,
+  "chunk_size": 800,
+  "chunk_overlap": 80,
+  "top_k": 5,
+  "rerank_top_k": 3,
+  "bm25_weight": 0.8,
+  "vector_weight": 0.2,
+  "sources_dir": "sources",
+  "cache_dir": "cache",
+  "indexes_dir": "indexes",
+  "supported_formats": [".pdf", ".xlsx", ".xls", ".md", ".txt"],
+  "vector_store": "chromadb",
+  "keyword_store": "whoosh"
+}

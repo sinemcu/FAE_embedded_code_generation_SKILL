@@ -1,0 +1,20 @@
+# FAE Knowledge Base Dependencies
+
+# 向量数据库
+chromadb>=0.4.0
+
+# 全文检索
+whoosh>=2.7.4
+
+# 文档解析
+pymupdf>=1.23.0
+openpyxl>=3.1.0
+
+# 嵌入模型（sentence-transformers 后端）
+sentence-transformers>=2.2.0
+
+# 可选：Ollama 后端（如使用 Ollama 嵌入则不需要 sentence-transformers）
+# 注意：两者选其一即可，默认使用 sentence-transformers
+
+# 可选：更好的 PDF 解析
+# pdfplumber>=0.10.0

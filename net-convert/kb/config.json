@@ -1,0 +1,18 @@
+{
+  "name": "Schematic Knowledge Base",
+  "version": "0.1.0",
+  "embedding_backend": "sentence_transformers",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dims": 384,
+  "embedding_model_path": "/Users/sinomcu/.openclaw/workspace/skills/doc-convert/paraphrase-multilingual-MiniLM-L12-v2",
+  "chunk_size": 1200,
+  "chunk_overlap": 100,
+  "top_k": 5,
+  "rerank_top_k": 3,
+  "bm25_weight": 0.8,
+  "vector_weight": 0.2,
+  "sources_dir": "/Users/sinomcu/.openclaw/workspace/fae_input/cache/schematics/",
+  "supported_formats": [".md"],
+  "vector_store": "chromadb",
+  "keyword_store": "whoosh"
+}
